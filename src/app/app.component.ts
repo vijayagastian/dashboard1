@@ -21,7 +21,7 @@ bacenddata:any=[];
 
 refreshNotes(){
   this.http.get(this.APIUrl).subscribe(data=>{
-    debugger
+    
     this.bacenddata=data;
   })
 }
