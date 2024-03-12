@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page Layout</title>
+  <link rel="stylesheet" href="app.component.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div>DASHBOARD</div>
+      <div class="username">
+        VIJAY AGASTIAN</div>
+      
+    </header>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <nav class="side-nav">
+        <ul>
+         <div class="item">DASHBOARD</div>
+         <div class="item">PROFILE</div>
+         <div class="item">CHARTS</div>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+
+      <div class="widget1">
+        
+        <h2>PRODUCTS</h2>
+        <h1>23067</h1>
+      </div>
+
+      <div class="widget2">
+        <h2>LOCATION</h2>
+        <h1>18</h1>
+      </div>
+
+      <div class="widget3">
+        <h2>SALES</h2>
+        <h1>2156</h1>
+      </div>
+
+      <div class="widget4">
+        <h2>CUSTOMERS</h2>
+        <h1>17479</h1>
+      </div>
+      
+      
+      <div class="chart" [chart]="Piechart">
+      </div>
+      
+  <div class="Newchart" [chart]="Linechart">
+       
+      
+     
+      </div>
+      <div class="chart1" [chart]="barchart">
+       
+      
+     
+      </div>
+    </div>
+    
+
+  </div>
+
+
+</body>
+
+<h1>Data from Node.js API</h1>
+
+<h1 *ngFor="let key of bacenddata">
+  <b> *{{key.value}}</b>
+</h1>
+
+</html>
